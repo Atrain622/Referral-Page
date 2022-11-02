@@ -3,6 +3,7 @@ const userRoutes = require('./routes/userRoutes');
 const mongoose = require('mongoose');
 const config = require('./config/keys');
 const path = require('path');
+const cors = require('cors');
 const app = express();
 
 const corsOpts = {
