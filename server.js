@@ -5,7 +5,21 @@ const config = require('./config/keys');
 const path = require('path');
 const app = express();
 
+const corsOpts = {
+  origin: '*',
 
+  methods: [
+    'GET',
+    'POST',
+    'PUT',
+  ],
+
+  allowedHeaders: [
+    'Content-Type',
+  ],
+};
+
+app.use(cors(corsOpts));
 
 /******************************************MiddleWares  ********************************************/
 app.use(express.json());
