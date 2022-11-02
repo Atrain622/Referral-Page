@@ -17,6 +17,7 @@
   "dependencies": {
     "concurrently": "^6.0.2",
     "express": "^4.17.1",
+    "cors": "^2.8.5",
     "mongoose": "^5.12.7",
     "uuid": "^9.0.0"
   },
